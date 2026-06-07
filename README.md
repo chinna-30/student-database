@@ -33,7 +33,7 @@ The application follows a modular design approach where each functionality is im
 
 
 ## Workflow
-
+```text
 
 Start
   |
