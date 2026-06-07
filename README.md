@@ -49,7 +49,7 @@ The application follows a modular design approach where each functionality is im
         |         |          |          |          |         |
         v         v          v          v          v         v
    +--------+ +--------+ +--------+ +--------+ +--------+ +--------+
-   |  Add   | |  View  | | Search | | Update | | Delete | |  Exit  |
+   |  Add   | |  View  | | Search | | Update | | Delete | |  Save  |
    +--------+ +--------+ +--------+ +--------+ +--------+ +--------+
         |         |          |          |          |
         +---------+----------+----------+----------+
@@ -61,7 +61,7 @@ The application follows a modular design approach where each functionality is im
                              |
                              v
                     +------------------+
-                    |       END        |
+                    |       EXIT        |
                     +------------------+
 ```
 
