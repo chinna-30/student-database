@@ -32,24 +32,34 @@ This project demonstrates practical implementation of data management concepts u
 The application follows a modular design approach where each functionality is implemented as a separate module.
 
 
-+---------------------+
-|      Main Menu      |
-+----------+----------+
-           |
-           v
-+---------------------+
-| Student Operations  |
-+----------+----------+
-           |
-           v
-+--------------------------------+
-|Add|View|Search|Edit|Delete|Save|
-+--------------------------------+
-           |
-           v
-+---------------------+
-|    File Storage     |
-+---------------------+
+## Workflow
+
+```text
+Start
+  |
+  v
++------------------+
+|    Main Menu     |
++------------------+
+  |
+  +--> Add Student
+  |
+  +--> View Students
+  |
+  +--> Search Student
+  |
+  +--> Update Student
+  |
+  +--> Delete Student
+  |
+  v
++------------------+
+|   Data Storage   |
++------------------+
+  |
+  v
+ EXIT
+
 
 
 ---
