@@ -2,7 +2,7 @@
 int i=1;
 int main()
 {
-	char x;
+	char x;int pass;
         struct st *hptr=0;
         load(&hptr);
 while(1){
@@ -42,21 +42,48 @@ while(1){
 		 printf("\n");
 	switch(op|32)
 	{
-		case 'a':
+		case 'a': printf("Enter the Password: ");
+					scanf("%d",&pass);
+				if(pass==1234){
                 	do
                 	{
 			   add(&hptr);
                            printf("Do you want add another student:(y/n)");
                            scanf(" %c",&x);
-                        }while(x=='y');break;
+                     }while(x=='y');
+				}
+				else
+					puts("Unauthorized Access");
+					break;
 
-		case 'd':delete(&hptr);break;
+		case 'd': printf("Enter the Password: ");
+					scanf("%d",&pass);
+				if(pass==1234){
+					delete(&hptr);
+				}
+				else
+					puts("Unauthorized Access");
+				break;
 		case 's':show(hptr);break;
-                case 'm':modify(hptr);break;
-                case 'v':save(hptr);break;
+        case 'm':printf("Enter the password: ");
+					scanf("%d",&pass);
+				if(pass==1234){
+					modify(hptr);
+				}
+				else
+					puts("Unauthorized Access");
+					break;
+        case 'v':save(hptr);break;
 		case 'e':terminate(hptr);return 0;
-                case 't':sorting(&hptr);break;
-		case 'l':delete_all(&hptr);break;
+        case 't':sorting(&hptr);break;
+		case 'l':printf("Enter the password: ");
+					scanf("%d",&pass);
+				if(pass==1234){
+					delete_all(&hptr);
+				}
+				else
+					puts("Unauthorized Access");
+				break;
 		case 'r':printf("+-----------+-----------------+---------------+\n");
     			 printf("| ROLL-NO   | STUDENT NAME    | PERCENTAGE    |\n");
     			 printf("+-----------+-----------------+---------------+\n");
