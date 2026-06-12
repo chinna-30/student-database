@@ -1,7 +1,7 @@
 #include"header.h"
 void save(ST *ptr)
 {
-        FILE *fp=fopen("database.txt","r+");
+        FILE *fp=fopen("database.txt","w");
 	ST *ptr1=ptr;
     fprintf(fp,"+-----------+-----------------+---------------+\n");
     fprintf(fp,"| ROLL-NO   | STUDENT NAME    | PERCENTAGE    |\n");
@@ -20,7 +20,7 @@ void save(ST *ptr)
     fclose(fp);
 	
 	
-        FILE *fs=fopen("studentdata.txt","r+");
+        FILE *fs=fopen("studentdata.txt","w");
 	
 	while(ptr1!=0)
         {
