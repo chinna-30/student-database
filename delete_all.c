@@ -15,6 +15,9 @@ void delete_all(ST **ptr)
 		*ptr=(*ptr)->next;
 		free(temp);
 	    } 
+		 FILE *fp =fopen("studentdata.txt","w");
+            fp=fopen("database.txt","w");
+            fclose(fp);
 	    puts("All the studen Record deleted Successfully");
 	    i=1;
 	}
